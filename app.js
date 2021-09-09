@@ -8,10 +8,7 @@ function pplrCustomEvent() {
   CustomEvent("pplrCompleted", {
     detail: {
       pplrComepleted: true,
-    },
-    bubbles: true,
-    cancelable: true,
-    composed: false,
+    }
   });
   // Dispatch the event to window object, You can dispatch it anywhere you want
   window.dispatchEvent(pplrCompleted);
